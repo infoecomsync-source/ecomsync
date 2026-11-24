@@ -1,463 +1,450 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ecomsync — One Growth Partner for Every Indian Marketplace</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Ecomsync manages Amazon, Flipkart, Meesho, Myntra and D2C channels end-to-end for Indian sellers.">
+<meta name="theme-color" content="#101b17">
+<title>Ecomsync — Every Marketplace. One Growth Partner.</title>
+<!-- Replace this path with your favicon file (PNG, ICO or SVG). -->
+<link rel="icon" type="image/jpeg" href="favicon.jpeg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          ink: '#14171C',
-          inksoft: '#2A2E35',
-          paper: '#F5F3EE',
-          paperdim: '#EAE6DB',
-          signal: '#FF5B1F',
-          signaldim: '#C94C1C',
-          teal: '#0F6E58',
-          stone: '#78715F',
-        },
-        fontFamily: {
-          display: ['Archivo', 'sans-serif'],
-          body: ['Inter', 'sans-serif'],
-          mono: ['IBM Plex Mono', 'monospace'],
-        },
-      },
-    },
-  }
-</script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-  html{scroll-behavior:smooth;}
-  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
-  body{font-family:'Inter',sans-serif;}
-  .kicker::before{content:"— ";}
-  .avatar + .avatar{ margin-left:-10px; }
+:root{--ink:#14211b;--muted:#66736b;--paper:#f7f8f4;--white:#fff;--green:#b8f36b;--deep:#10251c;--line:#e3e9e1;--lime:#d8ff9b;--orange:#ffb36b;--shadow:0 18px 55px rgba(19,40,28,.09)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif}h1,h2,h3,h4,p{margin-top:0}h1,h2,h3,.brand{font-family:Manrope,sans-serif;letter-spacing:-.045em}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1160px,calc(100% - 48px));margin:auto}.eyebrow{display:inline-flex;align-items:center;gap:9px;text-transform:uppercase;letter-spacing:.14em;font-size:11px;font-weight:700;color:#64813e}.eyebrow:before{content:"";width:23px;height:1px;background:#86b94a}.section{padding:108px 0}.section-head{max-width:700px;margin-bottom:48px}.section-head h2{font-size:clamp(34px,5vw,58px);line-height:1.05;margin:17px 0}.section-head p{color:var(--muted);font-size:17px;line-height:1.75;max-width:650px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;border:0;border-radius:999px;padding:15px 22px;font-weight:700;transition:.25s;cursor:pointer}.btn:hover{transform:translateY(-3px)}.btn-dark{background:var(--green);color:#132018}.btn-light{border:1px solid rgba(255,255,255,.28);color:white;background:transparent}.btn-outline{border:1px solid #cdd8cb;background:transparent;color:var(--ink)}.arrow{font-size:18px}
+header{position:sticky;top:0;z-index:50;background:rgba(247,248,244,.9);backdrop-filter:blur(16px);border-bottom:1px solid rgba(20,33,27,.07)}.nav{height:78px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:24px;font-weight:800;letter-spacing:-.07em;display:flex;align-items:center;gap:9px}.brand-mark{width:31px;height:31px;border-radius:10px;background:transparent;display:grid;place-items:center;font-size:18px;color:#17251c;position:relative;overflow:hidden}.brand-mark img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;z-index:2}.brand-fallback{position:relative;z-index:1}.brand span:last-child{color:#769b45}.navlinks{display:flex;align-items:center;gap:30px;font-size:13px;font-weight:600;color:#48554d}.navlinks a:hover{color:#6e9b35}.nav-cta{padding:12px 18px;background:var(--deep);color:#fff;border-radius:99px;font-size:13px;font-weight:700}.menu{display:none;background:none;border:0;font-size:25px}
+.hero{background:var(--deep);color:white;position:relative;overflow:hidden;padding:88px 0 0}.hero:before{content:"";position:absolute;width:700px;height:700px;border-radius:50%;border:1px solid rgba(216,255,155,.12);right:-170px;top:-300px;box-shadow:0 0 0 70px rgba(216,255,155,.025),0 0 0 140px rgba(216,255,155,.02)}.hero-grid{display:grid;grid-template-columns:1.06fr .94fr;gap:50px;align-items:center;position:relative}.hero .eyebrow{color:var(--lime)}.hero h1{font-size:clamp(52px,7.4vw,88px);line-height:.99;margin:23px 0 25px;max-width:680px}.hero h1 em{font-style:normal;color:var(--green)}.hero-copy{color:#bdc9c0;line-height:1.8;font-size:17px;max-width:590px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:32px 0 45px}.proof{display:flex;gap:38px;flex-wrap:wrap}.proof strong{display:block;font:800 29px Manrope;color:white;letter-spacing:-.05em}.proof span{font-size:12px;color:#aab9ae}.visual{min-height:440px;position:relative;display:flex;align-items:center;justify-content:center}.orb{position:absolute;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#d9ff9d,#88bd50 42%,#37633e 72%,#193c2c);filter:drop-shadow(0 35px 55px rgba(0,0,0,.3));opacity:.9}.orbit{position:absolute;width:470px;height:470px;border:1px solid rgba(215,255,155,.2);border-radius:50%;transform:rotate(-24deg) scaleY(.55)}.orbit.two{width:540px;height:540px;transform:rotate(38deg) scaleY(.5)}.dash{position:relative;z-index:2;width:min(430px,100%);padding:22px;border:1px solid rgba(255,255,255,.2);border-radius:22px;background:rgba(255,255,255,.11);backdrop-filter:blur(16px);box-shadow:0 25px 65px rgba(0,0,0,.2)}.dash-top{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:#e8f2e9;margin-bottom:20px}.live{color:var(--lime)}.dash-main{background:#f8faf5;border-radius:15px;padding:20px;color:var(--ink)}.dash-main small{color:#6d7b70}.dash-number{font:800 36px Manrope;margin:6px 0}.bars{height:95px;display:flex;align-items:end;gap:9px;border-bottom:1px solid #e3e9e1;margin-top:18px}.bars i{display:block;flex:1;background:linear-gradient(#b8f36b,#80b84b);border-radius:5px 5px 0 0}.dash-foot{display:flex;gap:8px;margin-top:14px}.tag{font-size:10px;padding:7px 10px;background:#eaf2e3;border-radius:99px;color:#4b6b35;font-weight:700}.platform-strip{border-top:1px solid rgba(255,255,255,.12);margin-top:75px;padding:22px 0;display:flex;justify-content:space-between;align-items:center;gap:15px;color:#a9b8ad;font-size:11px;text-transform:uppercase;letter-spacing:.12em}.platforms{display:flex;gap:30px;align-items:center;color:white;font-weight:800;font-size:14px;letter-spacing:-.03em}
+.problem-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:75px}.problem-intro{position:sticky;top:125px;align-self:start}.problem-intro h2{font-size:clamp(34px,4.5vw,54px);line-height:1.08}.problem-intro p{color:var(--muted);line-height:1.8}.compare{display:grid;gap:12px}.compare-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.compare-card{padding:22px 23px;border:1px solid var(--line);border-radius:15px;background:white;min-height:116px}.compare-card.old{background:#f0f1ed}.compare-card.new{border-color:#d7e9c6;background:#f4faed}.compare-card small{display:block;text-transform:uppercase;letter-spacing:.12em;font-size:9px;color:#88938a;font-weight:700;margin-bottom:12px}.compare-card p{font-size:14px;line-height:1.5;margin:0;font-weight:600}.compare-card.new p:before{content:"↗";color:#77a93f;margin-right:8px}
+.values{background:#eaf0e5}.values-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.value-card{background:white;border:1px solid #dfe8d9;border-radius:16px;padding:26px;min-height:205px}.value-card .num{font:700 12px Manrope;color:#8aa66d}.value-card h3{font-size:22px;margin:30px 0 10px}.value-card p{font-size:14px;color:var(--muted);line-height:1.65;margin:0}.quote-band{margin-top:45px;background:var(--deep);color:white;border-radius:20px;padding:38px 42px;display:grid;grid-template-columns:1fr 1.1fr;gap:45px;align-items:center}.quote-band blockquote{font:600 clamp(22px,3vw,32px) Manrope;letter-spacing:-.04em;line-height:1.25;margin:0}.quote-band p{color:#b7c5b9;line-height:1.7;margin:0}
+.market-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.market-card{background:white;border:1px solid var(--line);border-radius:17px;padding:25px;transition:.25s}.market-card:hover,.service-card:hover,.price-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.market-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px}.market-icon{width:46px;height:46px;border-radius:13px;background:#eff5e9;display:grid;place-items:center;font:800 14px Manrope;color:#547a37}.market-stat{font-size:10px;color:#7b887e;text-align:right}.market-card h3{font-size:22px;margin-bottom:9px}.market-card p{color:var(--muted);font-size:13px;line-height:1.7;min-height:88px}.chips{display:flex;gap:7px;flex-wrap:wrap}.chips span{font-size:10px;background:#f1f4ee;padding:7px 9px;border-radius:7px;color:#52604f}
+.category-row{display:flex;flex-wrap:wrap;gap:9px;margin-top:34px}.category-row span{border:1px solid var(--line);padding:10px 15px;border-radius:99px;font-size:12px;font-weight:600;background:#fff}
+.services{background:#f0f4ec}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.service-card{background:white;border:1px solid #e2e9df;border-radius:17px;padding:27px;transition:.25s}.service-icon{width:42px;height:42px;border-radius:12px;background:#eaf4df;display:grid;place-items:center;font-size:19px}.service-metric{font:800 26px Manrope;letter-spacing:-.05em;margin:25px 0 2px;color:#507b30}.service-card h3{font-size:20px;margin:12px 0}.service-card p{font-size:13px;color:var(--muted);line-height:1.75;margin:0}.service-card ul{padding-left:18px;margin:13px 0 0;color:var(--muted);font-size:12px;line-height:1.8}.service-card.wide{grid-column:1/-1}.gst-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px 24px;margin-top:14px}.gst-list ul{margin:0}.service-card .service-kicker{display:block;color:#7b887e;font-size:11px;margin-top:-2px;margin-bottom:8px}
+.testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.testimonial{background:white;border:1px solid var(--line);border-radius:17px;padding:26px;display:flex;flex-direction:column;min-height:310px}.stars{color:#8dbd4e;letter-spacing:3px;font-size:13px}.testimonial blockquote{font-size:14px;line-height:1.8;color:#45534a;margin:20px 0 28px;flex:1}.person{display:flex;align-items:center;gap:12px}.avatar{width:39px;height:39px;border-radius:50%;display:grid;place-items:center;background:#e9f2df;color:#557b35;font-weight:800}.person strong{display:block;font-size:12px}.person small{display:block;color:#859087;font-size:10px;margin-top:4px}.result{margin-top:20px;padding-top:15px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}.result strong{font:800 21px Manrope;color:#5d873b}.result small{font-size:10px;color:#7c897e}
+.pricing{background:var(--deep);color:white}.pricing .eyebrow{color:var(--lime)}.pricing .section-head p{color:#b8c5bb}.price-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;align-items:stretch}.price-card{position:relative;background:#f8faf5;color:var(--ink);border-radius:17px;padding:25px 21px;transition:.25s;border:1px solid transparent}.price-card.featured{background:#e9f6d9;border-color:var(--green);transform:translateY(-9px)}.popular{position:absolute;right:14px;top:14px;background:#c8f28e;color:#27401d;font-size:9px;font-weight:800;text-transform:uppercase;padding:6px 9px;border-radius:99px}.plan{font-size:13px;font-weight:700;color:#68766c}.price{font:800 34px Manrope;letter-spacing:-.06em;margin:18px 0 0}.per{font-size:11px;color:#7d897f}.price-card h3{font-size:15px;margin:18px 0 20px}.price-card ul{padding:0;list-style:none;display:grid;gap:13px;min-height:220px}.price-card li{font-size:11px;color:#536057;line-height:1.4;display:flex;gap:8px}.price-card li:before{content:"✓";color:#6e9c3b;font-weight:800}.price-card .btn{width:100%;font-size:11px;padding:13px 8px;background:var(--deep);color:white}.featured .btn{background:#9bd65b;color:#17251c}.pricing-note{text-align:center;color:#b8c5bb;font-size:12px;margin-top:32px}
+.cta{padding:100px 0;background:#e9f1e3}.cta-box{background:var(--deep);color:white;border-radius:24px;padding:55px;display:grid;grid-template-columns:1.2fr .8fr;gap:35px;align-items:center;position:relative;overflow:hidden}.cta-box:after{content:"";position:absolute;width:330px;height:330px;border:1px solid rgba(184,243,107,.25);border-radius:50%;right:-100px;top:-170px;box-shadow:0 0 0 45px rgba(184,243,107,.04),0 0 0 90px rgba(184,243,107,.03)}.cta-box h2{font-size:clamp(34px,5vw,54px);line-height:1.04;margin:16px 0}.cta-box p{color:#b8c5bb;line-height:1.8;max-width:550px}.contact-info{position:relative;z-index:1;display:grid;gap:12px}.contact-info a{padding:17px 19px;border:1px solid rgba(255,255,255,.18);border-radius:12px;color:white;font-size:14px}.contact-info a span{display:block;color:#aab9ae;font-size:10px;margin-bottom:5px}
+footer{background:#0b1912;color:white;padding:55px 0 25px}.footer-top{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:50px;padding-bottom:45px}.footer-brand p{max-width:330px;color:#9ba99e;font-size:13px;line-height:1.7;margin-top:18px}.footer-col strong{font-size:12px;display:block;margin-bottom:17px}.footer-col a{display:block;color:#aab8ad;font-size:12px;margin:12px 0}.footer-col a:hover{color:var(--green)}.footer-address span{display:block;color:#7f9184;font-size:9px;letter-spacing:.1em;margin-bottom:5px}.footer-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:20px;display:flex;justify-content:space-between;gap:20px;color:#87968b;font-size:10px}.legal{display:flex;gap:20px}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}.reveal.visible{opacity:1;transform:none}
+/* Polished motion */
+.hero .hero-grid>.reveal:first-child{transition-delay:.08s}.hero .visual.reveal{transition-delay:.22s}
+.orb{animation:orb-breathe 7s ease-in-out infinite alternate}.orbit{animation:orbit-drift 18s linear infinite}.orbit.two{animation:orbit-drift-reverse 23s linear infinite}.dash{animation:dashboard-float 6s ease-in-out infinite}
+.bars i{transform-origin:bottom;animation:bar-rise 1.1s cubic-bezier(.2,.75,.25,1) both}.bars i:nth-child(1){animation-delay:.2s}.bars i:nth-child(2){animation-delay:.28s}.bars i:nth-child(3){animation-delay:.36s}.bars i:nth-child(4){animation-delay:.44s}.bars i:nth-child(5){animation-delay:.52s}.bars i:nth-child(6){animation-delay:.6s}.bars i:nth-child(7){animation-delay:.68s}.bars i:nth-child(8){animation-delay:.76s}
+.market-card,.service-card,.price-card,.value-card,.testimonial{transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease}.market-card:hover,.service-card:hover,.price-card:hover,.value-card:hover,.testimonial:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.logo-window{overflow:hidden;flex:1;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}.platforms{width:max-content;flex-wrap:nowrap;animation:logo-scroll 22s linear infinite}.platforms span{white-space:nowrap}.logo-window:hover .platforms{animation-play-state:paused}
+.btn{will-change:transform}.btn:active{transform:translateY(-1px) scale(.98)}
+@keyframes dashboard-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}@keyframes orb-breathe{from{transform:scale(.97);opacity:.78}to{transform:scale(1.04);opacity:.98}}@keyframes orbit-drift{to{transform:rotate(696deg) scaleY(.55)}}@keyframes orbit-drift-reverse{to{transform:rotate(-682deg) scaleY(.5)}}@keyframes bar-rise{from{transform:scaleY(.08);opacity:.35}to{transform:scaleY(1);opacity:1}}@keyframes logo-scroll{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+
+@media(max-width:900px){.hero-grid,.problem-grid{grid-template-columns:1fr}.visual{min-height:380px}.problem-intro{position:static}.values-grid{grid-template-columns:repeat(2,1fr)}.market-grid,.service-grid{grid-template-columns:repeat(2,1fr)}.price-grid{grid-template-columns:repeat(2,1fr)}.price-card.featured{transform:none}.quote-band,.cta-box{grid-template-columns:1fr}.footer-top{grid-template-columns:1fr 1fr}.footer-brand{grid-column:1/-1}}
+@media(max-width:650px){.wrap{width:min(100% - 34px,1160px)}.section{padding:76px 0}.nav{height:68px}.menu{display:block;color:var(--ink)}.navlinks{display:none;position:absolute;top:68px;left:0;right:0;background:var(--paper);padding:22px 25px 28px;flex-direction:column;align-items:stretch;gap:19px;border-bottom:1px solid var(--line)}.navlinks.open{display:flex}.nav-cta{text-align:center}.hero{padding-top:65px}.hero h1{font-size:54px}.hero-copy{font-size:15px}.proof{gap:24px}.proof strong{font-size:25px}.visual{min-height:320px}.orb{width:260px;height:260px}.orbit{width:350px;height:350px}.orbit.two{width:410px;height:410px}.dash{padding:13px}.dash-main{padding:14px}.platform-strip{align-items:flex-start;flex-direction:column;margin-top:50px}.platforms{gap:18px;flex-wrap:wrap}.compare-row{grid-template-columns:1fr}.values-grid,.market-grid,.service-grid,.testimonials-grid,.price-grid{grid-template-columns:1fr}.value-card{min-height:170px}.quote-band{padding:28px}.market-card p{min-height:0}.price-card ul{min-height:0}.cta{padding:65px 0}.cta-box{padding:30px 24px}.footer-top{grid-template-columns:1fr 1fr;gap:28px}.footer-bottom{flex-direction:column}.legal{gap:14px}.section-head{margin-bottom:34px}}
+
+/* 45-minute callback request */
+.callback-copy{position:relative;z-index:1}
+.callback-form{position:relative;z-index:2;background:#fff;color:var(--ink);padding:25px;border-radius:18px;box-shadow:0 20px 55px rgba(0,0,0,.16)}
+.callback-form h3{font-size:23px;margin:0 0 7px}
+.callback-form .form-intro{font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:19px}
+.callback-fields{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.callback-field{display:grid;gap:6px}
+.callback-field.full{grid-column:1/-1}
+.callback-field label{font-size:11px;font-weight:700;color:#48554d}
+.callback-field input,.callback-field select{width:100%;min-width:0;border:1px solid #dce4d9;border-radius:9px;padding:12px 11px;background:#fbfcfa;color:var(--ink);font:13px "DM Sans",sans-serif;outline:none}
+.callback-field input:focus,.callback-field select:focus{border-color:#85b64c;box-shadow:0 0 0 3px rgba(184,243,107,.22)}
+.callback-form .btn{width:100%;margin-top:15px}
+.callback-note{font-size:10px;color:#7a877d;line-height:1.5;margin:10px 0 0}
+@media(max-width:650px){.callback-form{padding:20px}.callback-fields{grid-template-columns:1fr}.callback-field.full{grid-column:auto}.gst-list{grid-template-columns:1fr}}
+
+
+/* Top-of-page two-step 45-minute consultation form */
+.callback-card{width:100%;max-width:510px;justify-self:end;position:relative;z-index:2}.lead-form{background:#292b2a;color:#f7f8f7;border:1px solid rgba(138,174,255,.55);border-radius:22px;padding:28px 30px;box-shadow:0 25px 70px rgba(0,0,0,.28);font-family:"DM Sans",sans-serif}.step-head{display:flex;align-items:center;gap:16px;color:#c4c8c6;font-size:12px;margin-bottom:23px}.step-progress{width:42px;height:5px;background:#484b4a;border-radius:99px;overflow:hidden;flex:none}.step-progress i{display:block;width:50%;height:100%;background:#5686ef;border-radius:99px;transition:width .25s}.lead-form h2{font:800 clamp(23px,2.4vw,29px) Manrope;letter-spacing:-.045em;line-height:1.2;margin:0 0 8px;color:#fff}.lead-subtitle{color:#c4c8c6;font-size:14px;margin:0 0 22px}.lead-field{border:0;padding:0;margin:0 0 17px;min-width:0}.lead-field>label,.lead-field legend{display:block;font-size:12px;color:#d7dbd8;margin-bottom:8px;padding:0;font-weight:500}.lead-field input:not([type=radio]):not([type=checkbox]){width:100%;height:49px;border:1px solid #515554;background:#191b1a;color:#fff;border-radius:11px;padding:0 13px;font:14px "DM Sans",sans-serif;outline:none}.lead-field input:focus{border-color:#638ff0!important;box-shadow:0 0 0 3px rgba(86,134,239,.17)}.lead-field input::placeholder{color:#9da3a0}.phone-control{display:flex;gap:10px}.phone-control>span{width:79px;display:grid;place-items:center;background:#111;color:white;border:1px solid #515554;border-radius:11px;font-weight:700}.phone-control input{flex:1;min-width:0}.pill-options{display:flex;gap:8px;flex-wrap:wrap}.pill-options label,.time-options label{position:relative;cursor:pointer}.pill-options input,.time-options input{position:absolute;opacity:0;pointer-events:none}.pill-options span,.time-options span{display:block;padding:9px 14px;border:1px solid #515554;border-radius:99px;background:#171918;color:#f0f2f0;font-size:12px;transition:.2s}.pill-options input:checked+span,.time-options input:checked+span{background:#456bd2;border-color:#6d94f5;color:#fff}.consent{display:flex;align-items:flex-start;gap:10px;margin:24px 0;color:#d7dbd8;font-size:12px;line-height:1.5}.consent input{width:16px;height:16px;accent-color:#5686ef;flex:none;margin:1px 0 0}.consent a{text-decoration:underline;text-underline-offset:3px}.lead-submit{width:100%;height:58px;border:0;border-radius:11px;background:linear-gradient(100deg,#4967d2,#568ff0);color:#fff;font:700 17px Manrope;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:12px;transition:transform .2s,filter .2s}.lead-submit:hover{transform:translateY(-2px);filter:brightness(1.07)}.lead-trust{display:flex;justify-content:center;align-items:center;gap:8px;color:#c2c9c3;font-size:11px;margin:13px 0 0}.lead-trust span{color:#8ce09b;font-weight:800;font-size:16px}.time-options{display:grid;grid-template-columns:1fr 1fr;gap:10px}.time-options span{border-radius:10px;text-align:center;padding:13px}.step-actions{display:grid;grid-template-columns:.7fr 1.3fr;gap:10px;margin-top:25px}.lead-back{border:1px solid #616866;background:transparent;color:#fff;border-radius:10px;font-weight:600;cursor:pointer}.lead-footnote{color:#aeb6b1;font-size:11px;text-align:center;margin:13px 0 0}@media(max-width:980px){.hero-grid{grid-template-columns:1fr 1fr;gap:25px}.lead-form{padding:23px 20px}.pill-options span{padding:8px 11px}}@media(max-width:760px){.hero{padding-top:48px}.hero-grid{grid-template-columns:1fr}.callback-card{justify-self:start;max-width:620px;margin:8px auto 0}.hero-actions{margin-bottom:30px}.proof{margin-bottom:25px}}@media(max-width:480px){.lead-form{padding:21px 17px}.pill-options{gap:7px}.pill-options span{font-size:11px;padding:8px 10px}.time-options{grid-template-columns:1fr}}
+
+
+/* Ecomsync brand styling for the hero consultation form */
+.lead-form{background:#f8faf5;color:#14211b;border:1px solid rgba(216,255,155,.5);box-shadow:0 24px 65px rgba(0,0,0,.24)}
+.step-head{color:#66736b}
+.step-progress{background:#e3e9e1}
+.step-progress i{background:linear-gradient(90deg,#83b94b,#b8f36b)}
+.lead-form h2{color:#14211b}
+.lead-subtitle{color:#66736b}
+.lead-field>label,.lead-field legend{color:#48554d}
+.lead-field input:not([type=radio]):not([type=checkbox]){border:1px solid #dce4d9;background:#fff;color:#14211b}
+.lead-field input:focus{border-color:#85b64c!important;box-shadow:0 0 0 3px rgba(184,243,107,.24)}
+.lead-field input::placeholder{color:#929d94}
+.phone-control>span{background:#eaf2e3;color:#27401d;border:1px solid #dce8d3}
+.pill-options span,.time-options span{border:1px solid #dce4d9;background:#fff;color:#344238}
+.pill-options label:hover span,.time-options label:hover span{border-color:#9cc96a;background:#f2f8eb}
+.pill-options input:checked+span,.time-options input:checked+span{background:#e5f5d4;border-color:#8fbd58;color:#27401d;box-shadow:inset 0 0 0 1px rgba(143,189,88,.12)}
+.consent{color:#536057}
+.consent input{accent-color:#79a943}
+.consent a{color:#527b2e}
+.lead-submit{background:var(--green);color:#14211b}
+.lead-submit:hover{filter:brightness(.97);box-shadow:0 8px 22px rgba(104,151,55,.2)}
+.lead-trust{color:#66736b}
+.lead-trust span{color:#6e9c3b}
+.lead-back{border:1px solid #cdd8cb;background:#fff;color:#344238}
+.lead-back:hover{border-color:#8fbd58;background:#f2f8eb}
+.lead-footnote{color:#758178}
+
+
+/* Marketplace ticker: keep every channel visible and smoothly scrolling on mobile too */
+.platform-strip{display:flex;align-items:center;gap:22px}
+.platform-strip>span{flex:0 0 auto;white-space:nowrap}
+.logo-window{display:block;min-width:0;width:100%;overflow:hidden}
+.platforms{display:flex!important;width:max-content;flex-wrap:nowrap!important;gap:32px!important;white-space:nowrap;animation:logo-scroll 30s linear infinite!important}
+.platforms span{display:inline-flex;flex:0 0 auto;white-space:nowrap;padding:3px 0}
+.logo-window:hover .platforms{animation-play-state:paused!important}
+@media(max-width:650px){
+  .platform-strip{align-items:flex-start;flex-direction:column;gap:14px}
+  .logo-window{width:100%}
+  .platforms{gap:26px!important;font-size:13px}
+}
+@media(prefers-reduced-motion:reduce){
+  .platforms{animation:none!important;transform:none!important}
+}
+
 </style>
 </head>
-<body class="bg-paper text-ink font-body leading-relaxed">
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var counters = document.querySelectorAll("[data-counter]");
 
-<header class="sticky top-0 z-50 bg-paper/90 backdrop-blur-sm border-b border-ink/10">
-  <nav class="max-w-[1180px] mx-auto px-8 h-[76px] flex items-center justify-between">
-    <div class="font-display font-extrabold text-xl flex items-center gap-2">
-      <span class="w-[30px] h-[30px] rounded-[3px] bg-ink text-paper flex items-center justify-center text-base font-black">E</span>
-      ecomsync.
-    </div>
-    <div class="hidden md:flex items-center gap-9 text-[14.5px] font-medium text-inksoft">
-      <a href="#why" class="hover:text-signal transition-colors">Why Ecomsync</a>
-      <a href="#marketplaces" class="hover:text-signal transition-colors">Marketplaces</a>
-      <a href="#services" class="hover:text-signal transition-colors">Services</a>
-      <a href="#pricing" class="hover:text-signal transition-colors">Plans</a>
-    </div>
-    <a href="#pricing" class="border-[1.5px] border-ink text-ink hover:border-signal hover:text-signal transition-colors rounded-[3px] px-6 py-2.5 text-sm font-semibold">Talk Growth</a>
-  </nav>
-</header>
+  function animate(el) {
+    var target = parseFloat(el.getAttribute("data-counter"));
+    var prefix = el.getAttribute("data-prefix") || "";
+    var suffix = el.getAttribute("data-suffix") || "";
+    var duration = 2000; // 2 seconds
+    var start = null;
 
-<!-- HERO -->
-<section class="bg-ink text-paper pt-22 overflow-hidden">
-  <div class="max-w-[1180px] mx-auto px-8">
-    <div class="grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-16 items-start pt-16">
-      <div>
-        <div class="font-mono text-[13px] text-signal tracking-wide mb-6">Seller-First · Built for India</div>
-        <h1 class="font-display font-extrabold leading-[1.03] text-[clamp(40px,5.6vw,68px)] max-w-[12ch]">
-          Every Indian marketplace. <span class="text-signal">One growth partner.</span>
-        </h1>
-        <p class="mt-6 max-w-[46ch] text-lg text-paper/70">
-          Ecomsync manages your Amazon, Flipkart, Meesho, Myntra and D2C channels end-to-end — listings, ads, inventory, account health — so you stop firefighting and start scaling.
-        </p>
-        <div class="flex gap-4 flex-wrap mt-9">
-          <a href="#pricing" class="bg-signal hover:bg-signaldim text-paper rounded-[3px] px-7 py-3.5 font-semibold text-[15px] transition-colors">Build Your Growth Plan</a>
-          <a href="#services" class="border-[1.5px] border-white/15 hover:border-paper text-paper rounded-[3px] px-7 py-3.5 font-semibold text-[15px] transition-colors">See What We Do</a>
-        </div>
-      </div>
+    function step(timestamp) {
+      if (!start) start = timestamp;
+      var progress = Math.min((timestamp - start) / duration, 1);
+      var eased = 1 - Math.pow(1 - progress, 3); // slows down near the end
+      var value = Math.floor(eased * target);
+      el.textContent = prefix + value + suffix;
+      if (progress < 1) {
+        requestAnimationFrame(step);
+      } else {
+        el.textContent = prefix + target + suffix;
+      }
+    }
+    requestAnimationFrame(step);
+  }
 
-      <div class="border border-white/15 rounded-md p-5 bg-white/[0.02]">
-        <div class="font-mono text-xs text-paper/70 mb-3.5">Channels under management</div>
-        <div class="grid grid-cols-3 gap-2.5">
-          <div class="border border-white/15 rounded text-center p-3.5"><div class="font-display font-extrabold text-[15px]">AMZ</div><div class="text-[11px] text-paper/70 mt-1">Amazon</div></div>
-          <div class="border border-white/15 rounded text-center p-3.5"><div class="font-display font-extrabold text-[15px]">FK</div><div class="text-[11px] text-paper/70 mt-1">Flipkart</div></div>
-          <div class="border border-white/15 rounded text-center p-3.5"><div class="font-display font-extrabold text-[15px]">MSH</div><div class="text-[11px] text-paper/70 mt-1">Meesho</div></div>
-          <div class="border border-white/15 rounded text-center p-3.5"><div class="font-display font-extrabold text-[15px]">MYN</div><div class="text-[11px] text-paper/70 mt-1">Myntra</div></div>
-          <div class="border border-white/15 rounded text-center p-3.5"><div class="font-display font-extrabold text-[15px]">D2C</div><div class="text-[11px] text-paper/70 mt-1">D2C</div></div>
-          <div class="border border-white/15 rounded text-center p-3.5 flex items-center justify-center"><span class="font-mono text-[11px] text-paper/70">+ your store</span></div>
-        </div>
-      </div>
-    </div>
+  if ("IntersectionObserver" in window) {
+    var observer = new IntersectionObserver(function (entries, obs) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          animate(entry.target);
+          obs.unobserve(entry.target); // run only once
+        }
+      });
+    }, { threshold: 0.5 });
 
-    <div class="grid grid-cols-1 sm:grid-cols-3 border-t border-white/15 mt-16">
-      <div class="p-7 sm:border-r border-white/15 border-b sm:border-b-0"><div class="font-display font-extrabold text-4xl text-signal">₹120Cr+</div><div class="text-[13.5px] text-paper/70 mt-1">GMV managed</div></div>
-      <div class="p-7 sm:border-r border-white/15 border-b sm:border-b-0"><div class="font-display font-extrabold text-4xl text-signal">200+</div><div class="text-[13.5px] text-paper/70 mt-1">sellers served</div></div>
-      <div class="p-7"><div class="font-display font-extrabold text-4xl text-signal">5</div><div class="text-[13.5px] text-paper/70 mt-1">marketplaces, one team</div></div>
-    </div>
-  </div>
-</section>
+    counters.forEach(function (el) { observer.observe(el); });
+  } else {
+    counters.forEach(animate);
+  }
+});
+</script>
+<body>
+<header><div class="wrap nav"><a class="brand" href="#home"><span class="brand-mark"><img src="favicon.jpeg" alt="" onerror="this.style.display='none'"><span class="brand-fallback"><link rel="icon" type="image/png" href="favicon.jpeg"></span></span>ecomsync<span>.</span></a><button class="menu" aria-label="Open menu" aria-expanded="false">☰</button><nav class="navlinks"><a href="#why">Why Us</a><a href="#marketplaces">Marketplaces</a><a href="#services">Solutions</a><a href="#stories">Testimonials</a><a href="#pricing">Plans</a><a class="nav-cta" href="#callback">Book a 1:1 Call ↗</a></nav></div></header><main>
+<section class="hero" id="home"><div class="wrap"><div class="hero-grid"><div class="reveal"><span class="eyebrow">Seller-first · Built for India</span><h1>Every Indian<br><em>Marketplace.</em><br>One Growth<br>Partner.</h1><p class="hero-copy">Ecomsync helps Indian brands manage marketplaces, quick commerce, B2B portals and D2C storefronts — including catalogues, marketing, communication, shipping, operations and compliance — so you can focus on growth.</p><div class="hero-actions"><a class="btn btn-dark" href="#callback">Book a 1:1 Call <span class="arrow">↗</span></a><a class="btn btn-light" href="#services">See What We Do <span class="arrow">↓</span></a></div><div class="proof"><div><strong data-counter="120" data-prefix="₹" data-suffix="Cr+">₹120Cr+</strong><span>GMV Managed</span></div><div><strong data-counter="200" data-suffix="+">200+</strong><span>Sellers Served</span></div><div><strong data-counter="10">10+</strong><span>Marketplaces & channels</span></div></div></div>
+<div class="callback-card" id="callback"><form class="lead-form" id="callbackForm">
+<div class="step-head"><span class="step-progress"><i id="stepProgress"></i></span><span id="stepLabel">Step 1 of 2 · Your details</span></div>
+<div id="leadStepOne"><h2>Book a free 1:1 call</h2><p class="lead-subtitle">A focused 45-minute consultation with a commerce growth expert</p>
+<div class="lead-field"><label for="cbName">Your name *</label><input id="cbName" name="name" type="text" placeholder="Enter your full name" autocomplete="name" required></div>
+<div class="lead-field"><label for="cbPhone">Phone number *</label><div class="phone-control"><span>+91</span><input id="cbPhone" name="phone" type="tel" inputmode="numeric" pattern="[6-9][0-9]{9}" maxlength="10" placeholder="10-digit mobile number" autocomplete="tel" required></div></div>
+<fieldset class="lead-field"><legend>Do you have an active GST? *</legend><div class="pill-options"><label><input type="radio" name="gst" value="Yes" required><span>Yes</span></label><label><input type="radio" name="gst" value="No"><span>No</span></label><label><input type="radio" name="gst" value="Already applied"><span>Already applied</span></label></div></fieldset>
+<fieldset class="lead-field"><legend>What's your current monthly business revenue? *</legend><div class="pill-options"><label><input type="radio" name="revenue" value="Below ₹1 lakh" required><span>&lt; ₹1 lakh</span></label><label><input type="radio" name="revenue" value="₹1–5 lakhs"><span>₹1–5 lakhs</span></label><label><input type="radio" name="revenue" value="₹5–10 lakhs"><span>₹5–10 lakhs</span></label><label><input type="radio" name="revenue" value="₹10 lakh+"><span>₹10 lakh+</span></label></div></fieldset>
+<label class="consent"><input type="checkbox" id="cbConsent" required><span>I hereby authorize Ecomsync to use my contact details to call me back regarding my enquiry.</a></span></label>
+<button class="lead-submit" type="button" id="continueCallback">Continue <span>→</span></button><p class="lead-trust"><span>✓</span> Free consultation <span>✓</span> No obligation</p></div>
+<div id="leadStepTwo" hidden><h2>When should we call you?</h2><p class="lead-subtitle">Choose a convenient time for your 45-minute consultation.</p><fieldset class="lead-field"><legend>Preferred callback time *</legend><div class="time-options"><label><input type="radio" name="time" value="10 AM – 12 PM" required><span>10 AM – 12 PM</span></label><label><input type="radio" name="time" value="12 PM – 2 PM"><span>12 PM – 2 PM</span></label><label><input type="radio" name="time" value="2 PM – 4 PM"><span>2 PM – 4 PM</span></label><label><input type="radio" name="time" value="4 PM – 6 PM"><span>4 PM – 6 PM</span></label><label><input type="radio" name="time" value="Any time"><span>Any time</span></label></div></fieldset><div class="step-actions"><button class="lead-back" type="button" id="backCallback">← Back</button><button class="lead-submit" type="submit">Request a callback <span>→</span></button></div><p class="lead-footnote">Your details will be submitted to our team for a callback.</p></div>
+</form></div></div>
+<div class="platform-strip"><span>One partner across every channel</span><div class="logo-window"><div class="platforms"><span>AMAZON</span><span>FLIPKART</span><span>MEESHO</span><span>MYNTRA</span><span>AJIO</span><span>NYKAA</span><span>INDIAMART</span><span>SWIGGY</span><span>ZOMATO</span><span>ZEPTO</span><span>D2C</span><span>AMAZON</span><span>FLIPKART</span><span>MEESHO</span><span>MYNTRA</span><span>AJIO</span><span>NYKAA</span><span>INDIAMART</span><span>SWIGGY</span><span>ZOMATO</span><span>ZEPTO</span><span>D2C</span></div></div></div></div></section>
+<section class="section" id="why"><div class="wrap problem-grid"><div class="problem-intro reveal"><span class="eyebrow">Why Ecomsync</span><h2>A listing is not a brand. A brand needs a system.</h2><p>Indian marketplace sellers lose lakhs every month to poor listings, unoptimized ads, and ignored account health. Ecomsync fixes all three — simultaneously.</p></div><div class="compare reveal">
+<div class="compare-row"><div class="compare-card old"><small>Without a system</small><p>Managing 4 marketplace portals every morning</p></div><div class="compare-card new"><small>With Ecomsync</small><p>One dashboard, one team, zero portal-switching</p></div></div>
+<div class="compare-row"><div class="compare-card old"><small>Without a system</small><p>Listings going live with wrong specs, bad images</p></div><div class="compare-card new"><small>With Ecomsync</small><p>SEO-optimized listings built to marketplace standards</p></div></div>
+<div class="compare-row"><div class="compare-card old"><small>Without a system</small><p>Ad budgets burning with no visible ROI</p></div><div class="compare-card new"><small>With Ecomsync</small><p>ROAS-tracked campaigns with weekly optimization</p></div></div>
+<div class="compare-row"><div class="compare-card old"><small>Without a system</small><p>Account suspensions killing your festive season</p></div><div class="compare-card new"><small>With Ecomsync</small><p>Proactive health monitoring — issues caught early</p></div></div></div></div></section>
+<section class="section values"><div class="wrap"><div class="section-head reveal"><span class="eyebrow">How we work</span><h2>Our four commitments.</h2></div><div class="values-grid">
+<div class="value-card reveal"><span class="num">01 /</span><h3>Clarity</h3><p>No ambiguity in scope, deliverables, or pricing. Ever.</p></div><div class="value-card reveal"><span class="num">02 /</span><h3>Ownership</h3><p>We treat your account like it is our own business.</p></div><div class="value-card reveal"><span class="num">03 /</span><h3>Consistency</h3><p>Systems over luck. Growth through repeatable process.</p></div><div class="value-card reveal"><span class="num">04 /</span><h3>Partnership</h3><p>Long-term relationship, not a one-month transaction.</p></div></div>
+<div class="quote-band reveal"><blockquote>“To help Indian sellers build strong, visible and profitable brands through expert marketplace management.”</blockquote><p>We are not a vendor. We are building a business with you — invested in your category, your SKUs, your growth numbers.<br><br><b>Team Ecomsync</b> · Serving Sellers Across India</p></div></div></section>
+<section class="section" id="marketplaces"><div class="wrap"><div class="section-head reveal"><span class="eyebrow">Marketplaces we manage</span><h2>The shelf moved online.<br>We own every shelf.</h2><p>Marketplace and commerce-channel support across major Indian platforms — with services tailored to each platform's category and operating model.</p></div><div class="market-grid">
+<article class="market-card reveal"><div class="market-top"><span class="market-icon">AMZ</span><span class="market-stat">₹2.5L Cr+ annual GMV</span></div><h3>Amazon India</h3><p>India's largest marketplace. We manage your Seller Central — listings, A+ content, PPC, FBA, account health, and brand registry.</p><div class="chips"><span>Sponsored Products & Brands</span><span>A+ Content & Storefront</span><span>FBA Management</span><span>Brand Registry</span><span>Amazon</span><span>Flipkart</span><span>Meesho</span><span>Myntra</span><span>Nykaa</span><span>AJIO</span><span>Tata CLiQ</span><span>JioMart</span></div></article>
+<article class="market-card reveal"><div class="market-top"><span class="market-icon">FK</span><span class="market-stat">45%+ fashion market share</span></div><h3>Flipkart</h3><p>India's homegrown powerhouse. Full Flipkart Seller Hub management — catalog, Smart ROI ads, fulfillment, and festive campaign planning.</p><div class="chips"><span>Flipkart Ads</span><span>Catalog Quality</span><span>Fulfillment</span><span>Big Billion Days</span></div></article>
+<article class="market-card reveal"><div class="market-top"><span class="market-icon">MSH</span><span class="market-stat">140M+ active users</span></div><h3>Meesho</h3><p>The fast-growing social commerce platform. We optimize your Meesho catalog for Tier 2/3 buyers — pricing, images, returns management.</p><div class="chips"><span>Catalog Optimization</span><span>Pricing Strategy</span><span>Returns Reduction</span><span>Boost Ads</span></div></article>
+<article class="market-card reveal"><div class="market-top"><span class="market-icon">MYN</span><span class="market-stat">A leading fashion destination</span></div><h3>Myntra</h3><p>Fashion-first marketplace for brands ready to build a premium identity. We manage your Myntra Partner Hub — style shoots, content, and PLA ads.</p><div class="chips"><span>Style & Shoot</span><span>PLA & Display Ads</span><span>Collection Planning</span><span>Brand Page</span></div></article>
+<article class="market-card reveal"><div class="market-top"><span class="market-icon">AJ</span><span class="market-stat">Fashion & lifestyle</span></div><h3>AJIO</h3><p>Support for fashion and lifestyle brands selling through AJIO, including catalog readiness, product content, promotions and account coordination.</p><div class="chips"><span>Catalog Management</span><span>Product Content</span><span>Promotions</span><span>Account Coordination</span></div></article>
+<article class="market-card reveal"><div class="market-top"><span class="market-icon">NYK</span><span class="market-stat">Beauty & lifestyle</span></div><h3>Nykaa</h3><p>Marketplace support for beauty, personal care and lifestyle brands, with a focus on product catalog quality, content consistency and campaign coordination.</p><div class="chips"><span>Catalog Setup</span><span>Content Quality</span><span>Campaign Support</span><span>Brand Visibility</span></div></article>
+<article class="market-card reveal"><div class="market-top"><span class="market-icon">IM</span><span class="market-stat">B2B marketplace</span></div><h3>IndiaMART</h3><p>Reach wholesale and trade buyers through B2B platforms such as IndiaMART, Alibaba, CityMart, TradeIndia and Udaan, with structured listings, enquiry handling and catalogue upkeep.</p><div class="chips"><span>IndiaMART</span><span>Alibaba</span><span>CityMart</span><span>TradeIndia</span><span>Udaan</span><span>Product Listings</span><span>Lead Management</span><span>Enquiry Follow-up</span></div></article>
+<article class="market-card reveal"><div class="market-top"><span class="market-icon">SWG</span><span class="market-stat">Food delivery channel</span></div><h3>Swiggy</h3><p>For food and restaurant partners, support menu presentation, item information, availability updates and operational coordination on Swiggy.</p><div class="chips"><span>Menu Management</span><span>Item Content</span><span>Availability Updates</span><span>Partner Coordination</span></div></article>
+<article class="market-card reveal"><div class="market-top"><span class="market-icon">ZMT</span><span class="market-stat">Food delivery channel</span></div><h3>Zomato</h3><p>Support restaurant partners with menu accuracy, item descriptions, catalogue maintenance and coordination of platform updates on Zomato.</p><div class="chips"><span>Menu Management</span><span>Menu Content</span><span>Catalog Updates</span><span>Partner Coordination</span></div></article>
+<article class="market-card reveal"><div class="market-top"><span class="market-icon">ZPT</span><span class="market-stat">Quick commerce</span></div><h3>Zepto</h3><p>Quick-commerce channel support for eligible brands, including product catalogue readiness, content consistency, stock coordination and promotions.</p><div class="chips"><span>Catalog Readiness</span><span>Product Content</span><span>Stock Coordination</span><span>Promotions</span><span>Blinkit</span><span>Swiggy Instamart</span><span>BB Now</span><span>Zepto</span></div></article>
+<article class="market-card reveal"><div class="market-top"><span class="market-icon">D2C</span><span class="market-stat">Your brand. Your margin.</span></div><h3>D2C Channels</h3><p>Build a direct-to-consumer channel that reduces marketplace dependence. We set up, manage and grow your Shopify/WooCommerce store.</p><div class="chips"><span>Shopify / WooCommerce</span><span>Meta & Google Ads</span><span>Email & WhatsApp</span><span>Inventory Sync</span></div></article>
+<article class="market-card reveal"><div class="market-top"><span class="market-icon">+</span><span class="market-stat">Category expertise</span></div><h3>Across industries</h3><p>From emerging online-first brands to established operators, we build marketplace systems around the way your category sells.</p><div class="chips"><span>Furniture</span><span>Electronics</span><span>Fashion</span><span>Home & Kitchen</span><span>Beauty</span><span>FMCG</span><span>Industrial</span><span>Lifestyle</span><span>Healthcare</span><span>Automotive</span></div></article>
+</div></div></section>
+<section class="section services" id="services"><div class="wrap"><div class="section-head reveal"><span class="eyebrow">What we do</span><h2>End-to-end commerce solutions. One growth partner.</h2><p>From marketplace operations and quick commerce to D2C, B2B, digital growth, and business compliance — connected solutions for every stage of your commerce journey.</p></div>
 
-<!-- WHY -->
-<section id="why" class="py-28">
-  <div class="max-w-[1180px] mx-auto px-8">
-    <div class="max-w-[640px] mb-16">
-      <div class="kicker inline-block font-mono text-[13px] text-signal font-semibold mb-4">Why Ecomsync</div>
-      <h2 class="font-display font-extrabold leading-[1.12] text-[clamp(28px,3.4vw,42px)]">A listing is not a brand. A brand needs a system.</h2>
-      <p class="mt-4 text-stone text-base">Indian marketplace sellers lose lakhs every month to poor listings, unoptimized ads, and ignored account health. Ecomsync fixes all three — simultaneously.</p>
-    </div>
+<div class="service-grid">
+<article class="service-card reveal"><span class="service-icon">⌕</span><div class="service-metric">3.2×</div><small>Average conversion lift*</small><h3>Listing Optimization</h3><p>Every SKU built to rank. Keyword research, bullet points, backend search terms, A+ content, and image sequencing — all done to marketplace-specific standards that convert browsers to buyers.</p></article>
+<article class="service-card reveal"><span class="service-icon">↗</span><div class="service-metric">4.1×</div><small>Average ROAS*</small><h3>Ad Management</h3><p>ROAS-positive campaigns across Sponsored Products, Brands, and Display. Weekly bid optimization, negative keyword harvesting, and full ACoS accountability.</p></article>
+<article class="service-card reveal"><span class="service-icon">▤</span><div class="service-metric">0</div><small>Festive stockouts*</small><h3>Inventory Planning</h3><p>No more stockouts during festive season. Demand forecasting, reorder alerts, and FBA shipment planning so you never leave money on the table.</p></article>
+<article class="service-card reveal"><span class="service-icon">✓</span><div class="service-metric">99.2%</div><small>Account health score*</small><h3>Account Health</h3><p>Proactive monitoring of ODR, late dispatch, IP complaints, and policy violations. We catch issues before they become suspensions.</p></article>
+<article class="service-card reveal"><span class="service-icon">▥</span><div class="service-metric">Weekly</div><small>Insight reports</small><h3>Analytics & Reporting</h3><p>Weekly growth reports with actionable insights — not vanity metrics. Track GMV, units, ROAS, conversion rate, and BSR movements across all channels.</p></article>
+<article class="service-card reveal"><span class="service-icon">◎</span><div class="service-metric">5.8×</div><small>Revenue vs marketplace-only*</small><h3>D2C Growth</h3><p>Build a direct channel that reduces marketplace fees and increases margins. Shopify setup, Meta/Google ads, email flows, and cross-channel inventory sync — owned traffic, owned data.</p></article>
+<article class="service-card reveal"><span class="service-icon">▦</span><div class="service-metric">360°</div><small>Marketplace operations</small><h3>Marketplace Solutions</h3><p>End-to-end marketplace support across catalog creation, listing optimization, account management, pricing, promotions, inventory coordination, order operations and marketplace advertising.</p></article>
+<article class="service-card reveal"><span class="service-icon">⚡</span><div class="service-metric">Quick commerce</div><small>Fast-moving channels</small><h3>Quick Commerce Solutions</h3><p>Build and manage your presence across eligible quick-commerce apps such as Blinkit, Zepto, Swiggy Instamart and BB Now. Support includes assortment planning, product catalogues, content, availability, stock coordination, promotions and performance tracking across Blinkit, Zepto, Swiggy Instamart and BB Now.</p></article>
+<article class="service-card reveal"><span class="service-icon">◎</span><div class="service-metric">D2C</div><small>Storefront, marketing, communication,shipping and services, all in one place.</small><h3>D2C End-to-End Business Solutions</h3><p>We provide end-to-end support for direct-to-consumer brands, covering everything from setting up and maintaining your online store, including catalogue, payments and checkout, to running Meta and Google ads, social media and content to build your brand presence. We also handle customer communication through WhatsApp, SMS and email for order updates, follow-ups and queries, and manage shipping with courier coordination, order tracking, COD handling and returns. Everything is managed through a dedicated key account manager, your single point of contact for all services.</p></article>
+<article class="service-card reveal"><span class="service-icon">⇄</span><div class="service-metric">B2B</div><small>Wholesale & trade channels</small><h3>Wholesale & B2B Marketplace Solutions</h3><p>Strengthen your wholesale business across IndiaMART, Alibaba, CityMart, TradeIndia and Udaan with B2B onboarding, product and bulk catalogues, enquiry and lead workflows, buyer communication, pricing support and order coordination.</p></article>
+<article class="service-card reveal"><span class="service-icon">↗</span><div class="service-metric">Growth</div><small>Digital acquisition</small><h3>Digital & Performance Marketing</h3><p>Reach the right customers through Google Ads, Facebook and Instagram (Meta) Ads, YouTube Ads and marketplace advertising. Includes campaign planning, creative coordination, audience targeting, optimization and performance reporting.</p></article>
+<article class="service-card reveal"><span class="service-icon">⇢</span><div class="service-metric">Shipping</div><small>Order-to-delivery operations</small><h3>Shipping & Logistics Support</h3><p>Courier and shipping partner coordination, shipping integrations, order fulfilment workflows, tracking communication, delivery issue coordination, NDR and RTO monitoring and returns support.</p></article>
+</div>
 
-    <div class="border-t border-ink/10">
-      <div class="grid grid-cols-1 md:grid-cols-[1fr_28px_1fr] items-center gap-4 py-6 border-b border-ink/10">
-        <div class="text-stone">Managing 4 marketplace portals every morning</div>
-        <div class="text-signal text-lg md:text-center">→</div>
-        <div class="text-ink font-semibold">One dashboard, one team, zero portal-switching</div>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-[1fr_28px_1fr] items-center gap-4 py-6 border-b border-ink/10">
-        <div class="text-stone">Listings going live with wrong specs, bad images</div>
-        <div class="text-signal text-lg md:text-center">→</div>
-        <div class="text-ink font-semibold">SEO-optimized listings built to marketplace standards</div>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-[1fr_28px_1fr] items-center gap-4 py-6 border-b border-ink/10">
-        <div class="text-stone">Ad budgets burning with no visible ROI</div>
-        <div class="text-signal text-lg md:text-center">→</div>
-        <div class="text-ink font-semibold">ROAS-tracked campaigns with weekly optimization</div>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-[1fr_28px_1fr] items-center gap-4 py-6 border-b border-ink/10">
-        <div class="text-stone">Account suspensions killing your festive season</div>
-        <div class="text-signal text-lg md:text-center">→</div>
-        <div class="text-ink font-semibold">Proactive health monitoring — issues caught early</div>
-      </div>
-    </div>
+<div class="service-grid service-grid--pair">
 
-    <div class="grid grid-cols-2 lg:grid-cols-4 gap-px bg-ink/10 border border-ink/10 mt-20">
-      <div class="bg-paper p-8"><div class="font-display font-extrabold text-sm text-signal mb-4">01</div><h4 class="text-lg font-semibold mb-2">Clarity</h4><p class="text-[14.5px] text-stone">No ambiguity in scope, deliverables, or pricing. Ever.</p></div>
-      <div class="bg-paper p-8"><div class="font-display font-extrabold text-sm text-signal mb-4">02</div><h4 class="text-lg font-semibold mb-2">Ownership</h4><p class="text-[14.5px] text-stone">We treat your account like it is our own business.</p></div>
-      <div class="bg-paper p-8"><div class="font-display font-extrabold text-sm text-signal mb-4">03</div><h4 class="text-lg font-semibold mb-2">Consistency</h4><p class="text-[14.5px] text-stone">Systems over luck. Growth through repeatable process.</p></div>
-      <div class="bg-paper p-8"><div class="font-display font-extrabold text-sm text-signal mb-4">04</div><h4 class="text-lg font-semibold mb-2">Partnership</h4><p class="text-[14.5px] text-stone">Long-term relationship, not a one-month transaction.</p></div>
-    </div>
+  <article class="service-card reveal">
+    <span class="service-icon">✓</span>
+    <div class="service-metric">GST Registration &amp; Compliance Services</div>
+    <small>Registration, returns and ongoing compliance support</small>
+    <p>End-to-end assistance for GST registration, periodic filings, reconciliations, refunds and GST-related notices for eligible businesses and e-commerce sellers.</p>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-14 items-center mt-24 pt-14 border-t border-ink/10">
-      <blockquote class="font-display font-bold text-2xl leading-snug">"To help Indian sellers build strong, visible and profitable brands through expert marketplace management."</blockquote>
-      <div>
-        <p class="text-stone text-[15px] mb-6">We are not a vendor. We are building a business with you — invested in your category, your SKUs, your growth numbers.</p>
-        <div class="flex items-center gap-3.5">
-          <div class="flex items-center">
-            <div class="avatar w-[38px] h-[38px] rounded-full bg-ink text-paper flex items-center justify-center text-[13px] font-bold border-2 border-paperdim">R</div>
-            <div class="avatar w-[38px] h-[38px] rounded-full bg-ink text-paper flex items-center justify-center text-[13px] font-bold border-2 border-paperdim">S</div>
-            <div class="avatar w-[38px] h-[38px] rounded-full bg-ink text-paper flex items-center justify-center text-[13px] font-bold border-2 border-paperdim">A</div>
-          </div>
-          <div class="font-mono text-[13px] text-stone">Team Ecomsync · Serving Sellers Across India</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- MARKETPLACES -->
-<section id="marketplaces" class="bg-paperdim py-28">
-  <div class="max-w-[1180px] mx-auto px-8">
-    <div class="max-w-[640px] mb-16">
-      <div class="kicker inline-block font-mono text-[13px] text-signal font-semibold mb-4">Marketplaces We Manage</div>
-      <h2 class="font-display font-extrabold leading-[1.12] text-[clamp(28px,3.4vw,42px)]">The shelf moved online. We own every shelf.</h2>
-      <p class="mt-4 text-stone text-base">Deep expertise on every platform Indian buyers shop from — not a generalist agency managing everything superficially.</p>
-    </div>
-
-    <div class="border border-ink/10 rounded-md p-8 md:p-11 grid grid-cols-1 md:grid-cols-2 gap-10 bg-ink text-paper mb-5">
-      <div>
-        <div class="font-mono text-xs text-signal">₹2.5L Cr+ annual GMV</div>
-        <h3 class="text-[28px] font-display font-extrabold mt-3 mb-1.5">Amazon India</h3>
-        <div class="text-paper/70 text-sm mb-4">India's largest marketplace</div>
-        <p class="text-paper/70 text-[15px] max-w-[44ch]">We manage your Seller Central — listings, A+ content, PPC, FBA, account health, and brand registry.</p>
-      </div>
-      <ul class="flex flex-col gap-2.5 self-center">
-        <li class="text-[14.5px] pl-5 relative before:content-[''] before:absolute before:left-0 before:top-2 before:w-2 before:h-0.5 before:bg-signal">Sponsored Products & Brands</li>
-        <li class="text-[14.5px] pl-5 relative before:content-[''] before:absolute before:left-0 before:top-2 before:w-2 before:h-0.5 before:bg-signal">A+ Content & Storefront</li>
-        <li class="text-[14.5px] pl-5 relative before:content-[''] before:absolute before:left-0 before:top-2 before:w-2 before:h-0.5 before:bg-signal">FBA Management</li>
-        <li class="text-[14.5px] pl-5 relative before:content-[''] before:absolute before:left-0 before:top-2 before:w-2 before:h-0.5 before:bg-signal">Brand Registry & Protection</li>
+    <div class="legal-list">
+      <ul>
+        <li><strong>GST Registration</strong><span>Regular, Composition and multi-state registration.</span></li>
+        <li><strong>Amendment, Cancellation &amp; Revocation</strong><span>Updating business details, and cancelling or revoking registration.</span></li>
+        <li><strong>GST Return Filing</strong><span>Timely filing of GSTR-1, GSTR-3B and annual GSTR-9.</span></li>
+        <li><strong>Reconciliation &amp; ITC</strong><span>Matching books with GST data and claiming eligible Input Tax Credit.</span></li>
+      </ul>
+      <ul>
+        <li><strong>Refunds &amp; LUT Filing</strong><span>Refund claims and LUT filing for exporters.</span></li>
+        <li><strong>Notice Reply &amp; Assessment</strong><span>Drafted replies to GST notices and assessment support.</span></li>
+        <li><strong>E-Commerce GST Compliance</strong><span>Registration and returns for online sellers and marketplaces.</span></li>
+        <li><strong>E-Way Bill &amp; E-Invoice</strong><span>Smooth compliance for goods movement and invoicing.</span></li>
       </ul>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-      <div class="border border-ink/10 rounded-md p-8">
-        <div class="font-mono text-xs text-signal">45%+ fashion market share</div>
-        <h3 class="text-[22px] font-display font-bold mt-2.5 mb-1">Flipkart</h3>
-        <div class="text-stone text-[13.5px] mb-3.5">India's homegrown powerhouse</div>
-        <p class="text-stone text-[14.5px] mb-4.5">Full Flipkart Seller Hub management — catalog, Smart ROI ads, fulfillment, and festive campaign planning.</p>
-        <ul class="flex flex-col gap-2.5">
-          <li class="text-[14.5px] text-inksoft pl-5 relative before:content-[''] before:absolute before:left-0 before:top-2 before:w-2 before:h-0.5 before:bg-signal">Flipkart Ads (Smart ROI)</li>
-          <li class="text-[14.5px] text-inksoft pl-5 relative before:content-[''] before:absolute before:left-0 before:top-2 before:w-2 before:h-0.5 before:bg-signal">Catalog & Listing Quality</li>
-          <li class="text-[14.5px] text-inksoft pl-5 relative before:content-[''] before:absolute before:left-0 before:top-2 before:w-2 before:h-0.5 before:bg-signal">Fulfillment Optimization</li>
-          <li class="text-[14.5px] text-inksoft pl-5 relative before:content-[''] before:absolute before:left-0 before:top-2 before:w-2 before:h-0.5 before:bg-signal">Big Billion Days Planning</li>
-        </ul>
-      </div>
-      <div class="border border-ink/10 rounded-md p-8">
-        <div class="font-mono text-xs text-signal">140M+ active users</div>
-        <h3 class="text-[22px] font-display font-bold mt-2.5 mb-1">Meesho</h3>
-        <div class="text-stone text-[13.5px] mb-3.5">The fastest-growing social commerce platform</div>
-        <p class="text-stone text-[14.5px] mb-4.5">We optimize your Meesho catalog for Tier 2/3 buyers — pricing, images, returns management.</p>
-        <ul class="flex flex-col gap-2.5">
-          <li class="text-[14.5px] text-inksoft pl-5 relative before:content-[''] before:absolute before:left-0 before:top-2 before:w-2 before:h-0.5 before:bg-signal">Catalog Optimization</li>
-          <li class="text-[14.5px] text-inksoft pl-5 relative before:content-[''] before:absolute before:left-0 before:top-2 before:w-2 before:h-0.5 before:bg-signal">Competitive Pricing Strategy</li>
-          <li class="text-[14.5px] text-inksoft pl-5 relative before:content-[''] before:absolute before:left-0 before:top-2 before:w-2 before:h-0.5 before:bg-signal">Returns Rate Reduction</li>
-          <li class="text-[14.5px] text-inksoft pl-5 relative before:content-[''] before:absolute before:left-0 before:top-2 before:w-2 before:h-0.5 before:bg-signal">Boost Ads Management</li>
-        </ul>
-      </div>
-      <div class="border border-ink/10 rounded-md p-8">
-        <div class="font-mono text-xs text-signal">#1 fashion destination</div>
-        <h3 class="text-[22px] font-display font-bold mt-2.5 mb-1">Myntra</h3>
-        <div class="text-stone text-[13.5px] mb-3.5">Fashion-first marketplace for premium identity</div>
-        <p class="text-stone text-[14.5px] mb-4.5">We manage your Myntra Partner Hub — style shoots, content, and PLA ads.</p>
-        <ul class="flex flex-col gap-2.5">
-          <li class="text-[14.5px] text-inksoft pl-5 relative before:content-[''] before:absolute before:left-0 before:top-2 before:w-2 before:h-0.5 before:bg-signal">Style & Shoot Coordination</li>
-          <li class="text-[14.5px] text-inksoft pl-5 relative before:content-[''] before:absolute before:left-0 before:top-2 before:w-2 before:h-0.5 before:bg-signal">PLA & Display Ads</li>
-          <li class="text-[14.5px] text-inksoft pl-5 relative before:content-[''] before:absolute before:left-0 before:top-2 before:w-2 before:h-0.5 before:bg-signal">Collection Planning</li>
-          <li class="text-[14.5px] text-inksoft pl-5 relative before:content-[''] before:absolute before:left-0 before:top-2 before:w-2 before:h-0.5 before:bg-signal">Brand Page Management</li>
-        </ul>
-      </div>
-      <div class="border border-ink/10 rounded-md p-8">
-        <div class="font-mono text-xs text-signal">Your brand. Your margin.</div>
-        <h3 class="text-[22px] font-display font-bold mt-2.5 mb-1">D2C Channels</h3>
-        <div class="text-stone text-[13.5px] mb-3.5">Reduce marketplace dependence</div>
-        <p class="text-stone text-[14.5px] mb-4.5">We set up, manage and grow your Shopify/WooCommerce store alongside marketplace presence.</p>
-        <ul class="flex flex-col gap-2.5">
-          <li class="text-[14.5px] text-inksoft pl-5 relative before:content-[''] before:absolute before:left-0 before:top-2 before:w-2 before:h-0.5 before:bg-signal">Shopify / WooCommerce Setup</li>
-          <li class="text-[14.5px] text-inksoft pl-5 relative before:content-[''] before:absolute before:left-0 before:top-2 before:w-2 before:h-0.5 before:bg-signal">Meta & Google Ads</li>
-          <li class="text-[14.5px] text-inksoft pl-5 relative before:content-[''] before:absolute before:left-0 before:top-2 before:w-2 before:h-0.5 before:bg-signal">Email & WhatsApp Marketing</li>
-          <li class="text-[14.5px] text-inksoft pl-5 relative before:content-[''] before:absolute before:left-0 before:top-2 before:w-2 before:h-0.5 before:bg-signal">Cross-channel Inventory Sync</li>
-        </ul>
-      </div>
+    <p class="service-kicker">Services are provided directly or coordinated with qualified tax professionals, as applicable.</p>
+  </article>
+
+  <article class="service-card reveal">
+    <span class="service-icon">⚖</span>
+    <div class="service-metric">Corporate Legal Services</div>
+    <small>Advisory, contracts and court representation for businesses</small>
+    <p>Legal support for companies and business entities, covering day-to-day advisory, commercial documentation, dispute resolution and representation before courts and tribunals.</p>
+
+    <div class="legal-list">
+      <ul>
+        <li><strong>Corporate Advisory &amp; Compliance</strong><span>Day-to-day legal guidance, ROC filings and board-level compliance support.</span></li>
+        <li><strong>Contract Drafting &amp; Review</strong><span>Vendor, client, service and employment agreements, NDAs and MoUs.</span></li>
+        <li><strong>Commercial Litigation</strong><span>Contract disputes, recovery suits and representation in commercial courts.</span></li>
+        <li><strong>Cheque Bounce &amp; Recovery (Sec. 138 NI Act)</strong><span>Legal notice, complaint filing and recovery proceedings.</span></li>
+      </ul>
+      <ul>
+        <li><strong>Arbitration &amp; Mediation</strong><span>Arbitration clauses, proceedings and award enforcement.</span></li>
+        <li><strong>NCLT &amp; Insolvency (IBC)</strong><span>Company law matters, insolvency petitions and creditor/debtor representation.</span></li>
+        <li><strong>Tax Tribunal &amp; Appeals</strong><span>GST appeals, GST Appellate Tribunal and High Court representation.</span></li>
+        <li><strong>Labour &amp; Employment Law</strong><span>Policies, disputes, POSH compliance and labour court matters.</span></li>
+      </ul>
+      <ul>
+        <li><strong>IP &amp; Trademark</strong><span>Trademark registration, brand protection and infringement matters.</span></li>
+        <li><strong>Regulatory &amp; Licensing</strong><span>FSSAI, IEC, Shop Act and sector-specific licences.</span></li>
+        <li><strong>Due Diligence &amp; Legal Opinion</strong><span>Pre-investment checks, M&amp;A support and written legal opinions.</span></li>
+      </ul>
     </div>
 
-    <div class="mt-14 pt-9 border-t border-ink/10 flex flex-wrap gap-2.5 items-center">
-      <span class="font-mono text-[12.5px] text-stone mr-2.5">Category expertise across</span>
-      <span class="border border-ink/10 rounded-full px-4 py-1.5 text-[13.5px] text-inksoft">Furniture</span>
-      <span class="border border-ink/10 rounded-full px-4 py-1.5 text-[13.5px] text-inksoft">Electronics</span>
-      <span class="border border-ink/10 rounded-full px-4 py-1.5 text-[13.5px] text-inksoft">Fashion</span>
-      <span class="border border-ink/10 rounded-full px-4 py-1.5 text-[13.5px] text-inksoft">Home & Kitchen</span>
-      <span class="border border-ink/10 rounded-full px-4 py-1.5 text-[13.5px] text-inksoft">Beauty</span>
-      <span class="border border-ink/10 rounded-full px-4 py-1.5 text-[13.5px] text-inksoft">FMCG</span>
-      <span class="border border-ink/10 rounded-full px-4 py-1.5 text-[13.5px] text-inksoft">Industrial</span>
-      <span class="border border-ink/10 rounded-full px-4 py-1.5 text-[13.5px] text-inksoft">Lifestyle</span>
-      <span class="border border-ink/10 rounded-full px-4 py-1.5 text-[13.5px] text-inksoft">Healthcare</span>
-      <span class="border border-ink/10 rounded-full px-4 py-1.5 text-[13.5px] text-inksoft">Automotive</span>
-    </div>
-  </div>
-</section>
+    <p class="service-kicker">Legal services are provided by our team of advocates, as applicable to the matter.</p>
+  </article>
 
-<!-- SERVICES -->
-<section id="services" class="py-28">
-  <div class="max-w-[1180px] mx-auto px-8">
-    <div class="max-w-[640px] mb-16">
-      <div class="kicker inline-block font-mono text-[13px] text-signal font-semibold mb-4">What We Do</div>
-      <h2 class="font-display font-extrabold leading-[1.12] text-[clamp(28px,3.4vw,42px)]">Eight moves. Less guesswork.</h2>
-      <p class="mt-4 text-stone text-base">A full-stack operating rhythm for your marketplace presence — from first listing to scaling ads to protecting account health.</p>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-ink/10 border border-ink/10">
-      <div class="bg-paper p-9">
-        <div class="font-display font-extrabold text-[34px] text-signal">3.2×</div>
-        <div class="font-mono text-[12.5px] text-stone mb-5">avg. conversion lift</div>
-        <h4 class="text-[19px] font-semibold mb-2.5">Listing Optimization</h4>
-        <p class="text-[14.5px] text-stone">Every SKU built to rank. Keyword research, bullet points, backend search terms, A+ content, and image sequencing — all done to marketplace-specific standards that convert browsers to buyers.</p>
-      </div>
-      <div class="bg-paper p-9">
-        <div class="font-display font-extrabold text-[34px] text-signal">4.1×</div>
-        <div class="font-mono text-[12.5px] text-stone mb-5">average ROAS</div>
-        <h4 class="text-[19px] font-semibold mb-2.5">Ad Management</h4>
-        <p class="text-[14.5px] text-stone">ROAS-positive campaigns across Sponsored Products, Brands, and Display. Weekly bid optimization, negative keyword harvesting, and full ACoS accountability.</p>
-      </div>
-      <div class="bg-paper p-9">
-        <div class="font-display font-extrabold text-[34px] text-signal">0</div>
-        <div class="font-mono text-[12.5px] text-stone mb-5">festive stockouts</div>
-        <h4 class="text-[19px] font-semibold mb-2.5">Inventory Planning</h4>
-        <p class="text-[14.5px] text-stone">No more stockouts during festive season. Demand forecasting, reorder alerts, and FBA shipment planning so you never leave money on the table.</p>
-      </div>
-      <div class="bg-paper p-9">
-        <div class="font-display font-extrabold text-[34px] text-signal">99.2%</div>
-        <div class="font-mono text-[12.5px] text-stone mb-5">account health score</div>
-        <h4 class="text-[19px] font-semibold mb-2.5">Account Health</h4>
-        <p class="text-[14.5px] text-stone">Proactive monitoring of ODR, late dispatch, IP complaints, and policy violations. We catch issues before they become suspensions.</p>
-      </div>
-      <div class="bg-paper p-9">
-        <div class="font-display font-extrabold text-[34px] text-signal">Weekly</div>
-        <div class="font-mono text-[12.5px] text-stone mb-5">insight reports</div>
-        <h4 class="text-[19px] font-semibold mb-2.5">Analytics & Reporting</h4>
-        <p class="text-[14.5px] text-stone">Weekly growth reports with actionable insights — not vanity metrics. Track GMV, units, ROAS, conversion rate, and BSR movements across all channels.</p>
-      </div>
-      <div class="bg-paper p-9">
-        <div class="font-display font-extrabold text-[34px] text-signal">2.8×</div>
-        <div class="font-mono text-[12.5px] text-stone mb-5">revenue vs marketplace-only</div>
-        <h4 class="text-[19px] font-semibold mb-2.5">D2C Growth</h4>
-        <p class="text-[14.5px] text-stone">Build a direct channel that reduces marketplace fees and increases margins. Shopify setup, Meta/Google ads, email flows, and cross-channel inventory sync — owned traffic, owned data.</p>
-      </div>
-    </div>
-  </div>
-</section>
+</div>
 
-<!-- TESTIMONIALS -->
-<section class="bg-paperdim py-28">
-  <div class="max-w-[1180px] mx-auto px-8">
-    <div class="max-w-[640px] mb-16">
-      <div class="kicker inline-block font-mono text-[13px] text-signal font-semibold mb-4">Real Sellers. Real Numbers.</div>
-      <h2 class="font-display font-extrabold leading-[1.12] text-[clamp(28px,3.4vw,42px)]">We manage. You grow.</h2>
-      <p class="mt-4 text-stone text-base">Sellers across categories and cities — consistent results, no exceptions.</p>
-    </div>
+<p style="font-size:11px;color:#778477;margin-top:18px">*Performance figures supplied for this draft. Please validate the methodology and supporting data before publishing.</p></div></section><section class="section" id="stories"><div class="wrap"><div class="section-head reveal"><span class="eyebrow">Real sellers. Real numbers.</span><h2>We manage. You grow.</h2><p>Sellers across categories and cities — consistent results, no exceptions.</p></div><div class="testimonials-grid">
+<article class="testimonial reveal"><div class="stars">★★★★★</div><blockquote>“We were managing Amazon and Flipkart ourselves and barely doing ₹8L/month. Ecomsync took over in March — by October we crossed ₹31L. They found keyword gaps we didn't even know existed.”</blockquote><div class="person"><span class="avatar">R</span><div><strong>Rohit Agarwal</strong><small>Founder, Furnitura Home · Lucknow</small></div></div><div class="result"><strong>₹31L/mo</strong><small>from ₹8L in 7 months · Furniture</small></div></article>
+<article class="testimonial reveal"><div class="stars">★★★★★</div><blockquote>“Our Meesho account had a 22% return rate killing our margins. Ecomsync fixed the catalog, rewrote size guides, and returns dropped to 9% in 6 weeks. That alone paid for 3 years of their fees.”</blockquote><div class="person"><span class="avatar">P</span><div><strong>Priya Malhotra</strong><small>Co-founder, StyleNest Apparel · Delhi</small></div></div><div class="result"><strong>9%</strong><small>Returns, previously 22%</small></div></article>
+<article class="testimonial reveal"><div class="stars">★★★★★</div><blockquote>“They set up our Myntra Brand Page and ran the first PLA campaign. We got into the Big Fashion Festival top picks in our first quarter. The team genuinely understands the fashion category.”</blockquote><div class="person"><span class="avatar">A</span><div><strong>Arjun Nair</strong><small>Brand Manager, Kala Craft · Bangalore</small></div></div><div class="result"><strong>Top Pick</strong><small>Big Fashion Festival</small></div></article>
+</div><p style="font-size:11px;color:#7a887e;margin-top:18px">Client names, quotes and results are reproduced from the information provided. Confirm client approval and substantiation before publishing.</p></div></section>
+<section class="section pricing" id="pricing"><div class="wrap"><div class="section-head reveal"><span class="eyebrow">Transparent pricing</span><h2>Your Growth. Our Expertise.<br>Clear pricing.</h2><p>No hidden fees. No lock-ins. Cancel anytime with 30 days notice. Starting prices — final price depends on account complexity.</p></div><div class="price-grid">
+<article class="price-card reveal"><span class="plan">Starter</span><div class="price">₹9,999</div><span class="per">/month</span><h3>Get the fundamentals right</h3><ul><li>Listing optimization up to 50 SKUs</li><li>Basic ad management (₹30k ad budget)</li><li>Weekly performance report</li><li>Account health monitoring</li><li>WhatsApp support</li></ul><a class="btn" href="https://wa.me/919140594838?text=I%27m%20interested%20in%20the%20Starter%20plan">Start with Starter ↗</a></article>
+<article class="price-card featured reveal"><span class="popular">Most popular</span><span class="plan">Growth</span><div class="price">₹13,999</div><span class="per">/month</span><h3>Build a stronger growth engine</h3><ul><li>Listing optimization up to 150 SKUs</li><li>Advanced ad management (₹1L ad budget)</li><li>A+ Content creation (4 pages/month)</li><li>Bi-weekly strategy calls</li><li>Inventory planning & alerts</li><li>Priority WhatsApp support</li></ul><a class="btn" href="https://wa.me/919140594838?text=I%27m%20interested%20in%20the%20Growth%20plan">Start with Growth ↗</a></article>
+<article class="price-card reveal"><span class="plan">Scale</span><div class="price">₹18,999</div><span class="per">/month</span><h3>For ambitious operators</h3><ul><li>Unlimited SKU optimization</li><li>Full-funnel ad management (₹3L budget)</li><li>A+ Content + Brand Store</li><li>Weekly strategy calls</li><li>Festive season planning</li><li>Dedicated account manager</li><li>Competitor & category tracking</li></ul><a class="btn" href="https://wa.me/919140594838?text=I%27m%20interested%20in%20the%20Scale%20plan">Start Scaling ↗</a></article>
+<article class="price-card reveal"><span class="plan">Brand Plus</span><div class="price">₹29,999</div><span class="per">/month</span><h3>For category leaders</h3><ul><li>Unlimited SKUs across all accounts</li><li>Uncapped ad management</li><li>D2C store setup & management</li><li>Daily monitoring & reporting</li><li>C-suite strategy sessions</li><li>Brand registry & IP protection</li><li>Exclusive festive campaign planning</li></ul><a class="btn" href="https://wa.me/919140594838?text=I%27m%20interested%20in%20Brand%20Plus">Go Brand Plus ↗</a></article>
+</div><p class="pricing-note">No lock-in contracts · 30-day cancellation · Transparent reporting · GSTIN: 09BNMPA0349E1Z9</p></div></section>
+<section class="cta" id="contact"><div class="wrap"><div class="cta-box reveal"><div class="callback-copy"><span class="eyebrow">Ready to grow?</span><h2>Let's talk about your next stage of growth.</h2><p>Have a question before booking? Reach our team directly.</p><div class="contact-info"><a href="https://wa.me/919140594838"><span>WHATSAPP / SALES</span>+91 91405 94838 ↗</a><a href="https://wa.me/916390033665"><span>WHATSAPP / SUPPORT</span>+91 63900 33665 ↗</a></div><a class="btn btn-dark" href="#callback">Book a 1:1 Call <span class="arrow">↗</span></a></div></div></div></section>
+</main>
+<footer><div class="wrap"><div class="footer-top"><div class="footer-brand"><a class="brand" href="#home"><span class="brand-mark"><img src="favicon.jpeg" alt="" onerror="this.style.display='none'"><span class="brand-fallback"><link rel="icon" type="image/jpeg" href="favicon.jpeg"></span></span>ecomsync<span>.</span></a><p>Seller-first marketplace management for Indian brands ready to build a stronger, more profitable online business.</p></div><div class="footer-col"><strong>Explore</strong><a href="#why">Why Us</a><a href="#marketplaces">Marketplaces</a><a href="#services">Solutions</a><a href="#stories">Testimonials</a><a href="#pricing">Plans</a></div><div class="footer-col"><strong>Get in touch</strong><a href="https://wa.me/919140594838">WhatsApp: +91 91405 94838</a><a href="https://wa.me/916390033665">+91 6390033665</a><a href="mailto:YOUR-EMAIL@ECOMSYNC.IN">admin@ecomsync.in</a><a class="footer-address" href="#contact"><span>OFFICE ADDRESS</span>30, Patel Nagar extension Indira nagar sector 8, Lucknow 226016</a><a>GSTIN: 09BNMPA0349E1Z9</a></div></div><div class="footer-bottom"><span>© 2026 Ecomsync. All rights reserved.</span><div class="legal"><a href="mailto:?subject=Privacy%20Policy">Privacy</a><a href="mailto:?subject=Terms%20and%20Conditions">Terms</a></div></div></div></footer><script>
+const menu=document.querySelector('.menu'),links=document.querySelector('.navlinks');
+menu.addEventListener('click',()=>{const open=links.classList.toggle('open');menu.setAttribute('aria-expanded',open);menu.textContent=open?'✕':'☰'});
+links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰'}));
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="border border-ink/10 rounded-md p-7 flex flex-col h-full bg-paper">
-        <p class="text-[15px] text-inksoft flex-grow">"We were managing Amazon and Flipkart ourselves and barely doing ₹8L/month. Ecomsync took over in March — by October we crossed ₹31L. They found keyword gaps we didn't even know existed."</p>
-        <div class="flex items-center gap-3 mt-6 pt-5 border-t border-ink/10">
-          <div class="w-[38px] h-[38px] rounded-full bg-ink text-paper flex items-center justify-center text-[13px] font-bold">R</div>
-          <div><b class="block text-[14.5px]">Rohit Agarwal</b><span class="text-[13px] text-stone">Founder, Furnitura Home · Lucknow</span></div>
-          <div class="ml-auto text-right"><div class="font-display font-extrabold text-base text-teal">₹31L/mo</div><div class="font-mono text-[11px] text-stone">from ₹8L in 7 months</div></div>
-        </div>
-      </div>
-      <div class="border border-ink/10 rounded-md p-7 flex flex-col h-full bg-paper">
-        <p class="text-[15px] text-inksoft flex-grow">"Our Meesho account had a 22% return rate killing our margins. Ecomsync fixed the catalog, rewrote size guides, and returns dropped to 9% in 6 weeks. That alone paid for 3 years of their fees."</p>
-        <div class="flex items-center gap-3 mt-6 pt-5 border-t border-ink/10">
-          <div class="w-[38px] h-[38px] rounded-full bg-ink text-paper flex items-center justify-center text-[13px] font-bold">P</div>
-          <div><b class="block text-[14.5px]">Priya Malhotra</b><span class="text-[13px] text-stone">Co-founder, StyleNest Apparel · Delhi</span></div>
-          <div class="ml-auto text-right"><div class="font-display font-extrabold text-base text-teal">9%</div><div class="font-mono text-[11px] text-stone">returns (was 22%)</div></div>
-        </div>
-      </div>
-      <div class="border border-ink/10 rounded-md p-7 flex flex-col h-full bg-paper">
-        <p class="text-[15px] text-inksoft flex-grow">"They set up our Myntra Brand Page and ran the first PLA campaign. We got into the Big Fashion Festival top picks in our first quarter. The team genuinely understands the fashion category."</p>
-        <div class="flex items-center gap-3 mt-6 pt-5 border-t border-ink/10">
-          <div class="w-[38px] h-[38px] rounded-full bg-ink text-paper flex items-center justify-center text-[13px] font-bold">A</div>
-          <div><b class="block text-[14.5px]">Arjun Nair</b><span class="text-[13px] text-stone">Brand Manager, Kala Craft · Bangalore</span></div>
-          <div class="ml-auto text-right"><div class="font-display font-extrabold text-base text-teal">Top Pick</div><div class="font-mono text-[11px] text-stone">Big Fashion Festival</div></div>
-        </div>
-      </div>
-    </div>
+// Count the hero proof points up when they enter the viewport.
+const counters=document.querySelectorAll('[data-counter]');
+const counterObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{
+  if(!entry.isIntersecting)return;
+  const el=entry.target, target=Number(el.dataset.counter), prefix=el.dataset.prefix||'', suffix=el.dataset.suffix||'';
+  const duration=1300, start=performance.now();
+  const tick=now=>{const progress=Math.min((now-start)/duration,1);const eased=1-Math.pow(1-progress,3);el.textContent=prefix+Math.round(target*eased).toLocaleString('en-IN')+suffix;if(progress<1)requestAnimationFrame(tick)};
+  requestAnimationFrame(tick);counterObserver.unobserve(el);
+}),{threshold:.7});
+counters.forEach(el=>counterObserver.observe(el));
 
-    <div class="grid grid-cols-2 md:grid-cols-4 border border-ink/10 rounded-md mt-14">
-      <div class="p-7 text-center border-r border-b md:border-b-0 border-ink/10"><div class="font-display font-extrabold text-[28px]">₹120Cr+</div><div class="text-[12.5px] text-stone mt-1">Total GMV Managed</div></div>
-      <div class="p-7 text-center border-b md:border-b-0 border-ink/10"><div class="font-display font-extrabold text-[28px]">200+</div><div class="text-[12.5px] text-stone mt-1">Sellers Served</div></div>
-      <div class="p-7 text-center border-r border-ink/10"><div class="font-display font-extrabold text-[28px]">98%</div><div class="text-[12.5px] text-stone mt-1">Client Retention</div></div>
-      <div class="p-7 text-center"><div class="font-display font-extrabold text-[28px]">4.8★</div><div class="text-[12.5px] text-stone mt-1">Average Rating</div></div>
-    </div>
-  </div>
-</section>
+// Two-step callback request flow.
 
-<!-- PRICING -->
-<section id="pricing" class="py-28">
-  <div class="max-w-[1180px] mx-auto px-8">
-    <div class="max-w-[640px] mb-16">
-      <div class="kicker inline-block font-mono text-[13px] text-signal font-semibold mb-4">Transparent Pricing</div>
-      <h2 class="font-display font-extrabold leading-[1.12] text-[clamp(28px,3.4vw,42px)]">Your growth. Our expertise. Clear pricing.</h2>
-      <p class="mt-4 text-stone text-base">No hidden fees. No lock-ins. Cancel anytime with 30 days notice. Starting prices — final price depends on account complexity.</p>
-    </div>
 
-    <div class="grid grid-cols-1 lg:grid-cols-4 gap-5 items-stretch">
-      <div class="border border-ink/10 rounded-md p-8 flex flex-col bg-paper">
-        <div class="font-display font-extrabold text-lg">Starter</div>
-        <div class="text-[13px] text-stone mt-1.5 mb-6">Get the fundamentals right</div>
-        <div class="font-display font-extrabold text-[34px] mb-6">₹9,999<small class="font-body font-medium text-sm text-stone">/month</small></div>
-        <ul class="flex flex-col gap-3 mb-7 flex-grow">
-          <li class="text-[13.5px] pl-4.5 relative before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-[7px] before:h-0.5 before:bg-teal">Full listing optimization (up to 50 SKUs)</li>
-          <li class="text-[13.5px] pl-4.5 relative before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-[7px] before:h-0.5 before:bg-teal">Basic ad management (₹30k ad budget)</li>
-          <li class="text-[13.5px] pl-4.5 relative before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-[7px] before:h-0.5 before:bg-teal">Weekly performance report</li>
-          <li class="text-[13.5px] pl-4.5 relative before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-[7px] before:h-0.5 before:bg-teal">Account health monitoring</li>
-          <li class="text-[13.5px] pl-4.5 relative before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-[7px] before:h-0.5 before:bg-teal">WhatsApp support</li>
-        </ul>
-        <a href="#" class="w-full text-center border-[1.5px] border-ink hover:border-signal hover:text-signal transition-colors rounded-[3px] px-6 py-3.5 font-semibold text-[15px]">Start with Starter</a>
-      </div>
+// =====================================
+// ECOMSYNC CALLBACK FORM + GOOGLE SHEETS
+// =====================================
 
-      <div class="border-2 border-signal rounded-md p-8 flex flex-col bg-ink text-paper relative">
-        <span class="absolute -top-3 left-6 bg-signal text-paper font-mono text-[11px] px-2.5 py-1 rounded-[3px]">Most Popular</span>
-        <div class="font-display font-extrabold text-lg">Growth</div>
-        <div class="text-[13px] text-paper/70 mt-1.5 mb-6">Build a stronger growth engine</div>
-        <div class="font-display font-extrabold text-[34px] mb-6">₹13,999<small class="font-body font-medium text-sm text-paper/70">/month</small></div>
-        <ul class="flex flex-col gap-3 mb-7 flex-grow">
-          <li class="text-[13.5px] text-paper/70 pl-4.5 relative before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-[7px] before:h-0.5 before:bg-signal">Full listing optimization (up to 150 SKUs)</li>
-          <li class="text-[13.5px] text-paper/70 pl-4.5 relative before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-[7px] before:h-0.5 before:bg-signal">Advanced ad management (₹1L ad budget)</li>
-          <li class="text-[13.5px] text-paper/70 pl-4.5 relative before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-[7px] before:h-0.5 before:bg-signal">A+ Content creation (4 pages/month)</li>
-          <li class="text-[13.5px] text-paper/70 pl-4.5 relative before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-[7px] before:h-0.5 before:bg-signal">Bi-weekly strategy calls</li>
-          <li class="text-[13.5px] text-paper/70 pl-4.5 relative before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-[7px] before:h-0.5 before:bg-signal">Inventory planning & alerts</li>
-          <li class="text-[13.5px] text-paper/70 pl-4.5 relative before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-[7px] before:h-0.5 before:bg-signal">Priority WhatsApp support</li>
-        </ul>
-        <a href="#" class="w-full text-center bg-signal hover:bg-signaldim text-paper rounded-[3px] px-6 py-3.5 font-semibold text-[15px] transition-colors">Start with Growth</a>
-      </div>
+// 1. Google Apps Script Web App URL
+const GOOGLE_SHEETS_WEB_APP_URL =
+  'https://script.google.com/macros/s/AKfycbzWd-myKGGv1M9NVUl4hKRk-5QIpViNCmvfTUYtYIo_MTIU5czJ1YG94CvYRf0y-20mrQ/exec';
 
-      <div class="border border-ink/10 rounded-md p-8 flex flex-col bg-paper">
-        <div class="font-display font-extrabold text-lg">Scale</div>
-        <div class="text-[13px] text-stone mt-1.5 mb-6">For ambitious operators</div>
-        <div class="font-display font-extrabold text-[34px] mb-6">₹18,999<small class="font-body font-medium text-sm text-stone">/month</small></div>
-        <ul class="flex flex-col gap-3 mb-7 flex-grow">
-          <li class="text-[13.5px] pl-4.5 relative before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-[7px] before:h-0.5 before:bg-teal">Unlimited SKU optimization</li>
-          <li class="text-[13.5px] pl-4.5 relative before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-[7px] before:h-0.5 before:bg-teal">Full-funnel ad management (₹3L budget)</li>
-          <li class="text-[13.5px] pl-4.5 relative before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-[7px] before:h-0.5 before:bg-teal">A+ Content + Brand Store</li>
-          <li class="text-[13.5px] pl-4.5 relative before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-[7px] before:h-0.5 before:bg-teal">Weekly strategy calls</li>
-          <li class="text-[13.5px] pl-4.5 relative before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-[7px] before:h-0.5 before:bg-teal">Festive season planning</li>
-          <li class="text-[13.5px] pl-4.5 relative before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-[7px] before:h-0.5 before:bg-teal">Dedicated account manager</li>
-          <li class="text-[13.5px] pl-4.5 relative before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-[7px] before:h-0.5 before:bg-teal">Competitor & category tracking</li>
-        </ul>
-        <a href="#" class="w-full text-center border-[1.5px] border-ink hover:border-signal hover:text-signal transition-colors rounded-[3px] px-6 py-3.5 font-semibold text-[15px]">Start Scaling</a>
-      </div>
+// 2. Get callback form elements
+const callbackForm = document.getElementById('callbackForm');
+const stepOne = document.getElementById('leadStepOne');
+const stepTwo = document.getElementById('leadStepTwo');
+const stepLabel = document.getElementById('stepLabel');
+const stepProgress = document.getElementById('stepProgress');
 
-      <div class="border border-ink/10 rounded-md p-8 flex flex-col bg-paper">
-        <div class="font-display font-extrabold text-lg">Brand Plus</div>
-        <div class="text-[13px] text-stone mt-1.5 mb-6">For category leaders</div>
-        <div class="font-display font-extrabold text-[34px] mb-6">₹29,999<small class="font-body font-medium text-sm text-stone">/month</small></div>
-        <ul class="flex flex-col gap-3 mb-7 flex-grow">
-          <li class="text-[13.5px] pl-4.5 relative before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-[7px] before:h-0.5 before:bg-teal">Unlimited SKUs across all accounts</li>
-          <li class="text-[13.5px] pl-4.5 relative before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-[7px] before:h-0.5 before:bg-teal">Uncapped ad management</li>
-          <li class="text-[13.5px] pl-4.5 relative before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-[7px] before:h-0.5 before:bg-teal">D2C store setup & management</li>
-          <li class="text-[13.5px] pl-4.5 relative before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-[7px] before:h-0.5 before:bg-teal">Daily monitoring & reporting</li>
-          <li class="text-[13.5px] pl-4.5 relative before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-[7px] before:h-0.5 before:bg-teal">C-suite strategy sessions</li>
-          <li class="text-[13.5px] pl-4.5 relative before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-[7px] before:h-0.5 before:bg-teal">Brand registry & IP protection</li>
-          <li class="text-[13.5px] pl-4.5 relative before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-[7px] before:h-0.5 before:bg-teal">Exclusive festive campaign planning</li>
-        </ul>
-        <a href="#" class="w-full text-center border-[1.5px] border-ink hover:border-signal hover:text-signal transition-colors rounded-[3px] px-6 py-3.5 font-semibold text-[15px]">Go Brand Plus</a>
-      </div>
-    </div>
+const continueButton = document.getElementById('continueCallback');
+const backButton = document.getElementById('backCallback');
 
-    <div class="flex justify-center gap-7 flex-wrap mt-12 text-[13.5px] text-stone">
-      <span>No lock-in contracts</span>
-      <span>30-day cancellation</span>
-      <span>Transparent reporting</span>
-      <span>GST No. 09AUBPN5052G4ZL</span>
-    </div>
-  </div>
-</section>
+const nameInput = document.getElementById('cbName');
+const phoneInput = document.getElementById('cbPhone');
 
-<!-- CTA -->
-<section class="bg-ink text-paper text-center py-28">
-  <div class="max-w-[1180px] mx-auto px-8">
-    <div class="kicker inline-block font-mono text-[13px] text-signal font-semibold mb-4">Ready to Scale?</div>
-    <h2 class="font-display font-extrabold text-[clamp(30px,4vw,48px)] max-w-[16ch] mx-auto">Your brand's best chapter starts here.</h2>
-    <p class="text-paper/70 max-w-[52ch] mx-auto mt-5 mb-10 text-base">Book a free 30-minute growth audit. We analyse your current marketplace presence, identify the top three revenue leaks, and show you exactly what Ecomsync would fix first.</p>
-    <div class="flex justify-center gap-4 flex-wrap">
-      <a href="https://wa.me/919140594838" class="bg-signal hover:bg-signaldim text-paper rounded-[3px] px-7 py-3.5 font-semibold text-[15px] transition-colors">WhatsApp Us Now</a>
-      <a href="mailto:hello@ecomsync.in" class="border-[1.5px] border-white/15 hover:border-paper text-paper rounded-[3px] px-7 py-3.5 font-semibold text-[15px] transition-colors">Email Us</a>
-    </div>
-    <div class="flex justify-center gap-12 flex-wrap mt-14">
-      <div class="text-[14.5px] text-paper/70">WhatsApp<b class="block text-paper font-mono text-[15px] mt-1">+91 91405 94838</b></div>
-      <div class="text-[14.5px] text-paper/70">Direct Line<b class="block text-paper font-mono text-[15px] mt-1">+91 63900 33665</b></div>
-    </div>
-    <div class="mt-10 text-paper/70 text-[13.5px]">🇮🇳 Serving Sellers Across India</div>
-  </div>
-</section>
+// 3. Continue to step 2
+continueButton.addEventListener('click', function () {
 
-<!-- FOOTER -->
-<footer class="bg-paperdim py-12">
-  <div class="max-w-[1180px] mx-auto px-8">
-    <div class="flex justify-between items-center flex-wrap gap-5">
-      <div class="font-display font-extrabold text-xl flex items-center gap-2">
-        <span class="w-[30px] h-[30px] rounded-[3px] bg-ink text-paper flex items-center justify-center text-base font-black">E</span>
-        ecomsync.
-      </div>
-      <div class="flex gap-7 text-sm text-inksoft">
-        <a href="#why" class="hover:text-signal transition-colors">Why Us</a>
-        <a href="#marketplaces" class="hover:text-signal transition-colors">Marketplaces</a>
-        <a href="#services" class="hover:text-signal transition-colors">Services</a>
-        <a href="#pricing" class="hover:text-signal transition-colors">Plans</a>
-      </div>
-    </div>
-    <div class="mt-6 pt-5 border-t border-ink/10 text-[12.5px] text-stone flex justify-between flex-wrap gap-2">
-      <span>© 2026 Ecomsync. All rights reserved. · GST No. 09AUBPN5052G4ZL</span>
-      <span class="flex gap-4"><a href="#" class="hover:text-signal transition-colors">Privacy</a><a href="#" class="hover:text-signal transition-colors">Terms</a></span>
-    </div>
-  </div>
-</footer>
+  // Validate name and phone
+  if (!nameInput.value.trim()) {
+    alert('Please enter your full name.');
+    nameInput.focus();
+    return;
+  }
 
+  if (!phoneInput.checkValidity()) {
+    alert('Please enter a valid 10-digit mobile number.');
+    phoneInput.focus();
+    return;
+  }
+
+  // Validate GST and revenue
+  if (!callbackForm.querySelector('input[name="gst"]:checked')) {
+    alert('Please select your GST status.');
+    return;
+  }
+
+  if (!callbackForm.querySelector('input[name="revenue"]:checked')) {
+    alert('Please select your monthly revenue.');
+    return;
+  }
+
+  // Validate consent
+  if (!document.getElementById('cbConsent').checked) {
+    alert('Please accept the Terms and Privacy Policy.');
+    return;
+  }
+
+  stepOne.hidden = true;
+  stepTwo.hidden = false;
+
+  stepLabel.textContent = 'Step 2 of 2 · Callback time';
+  stepProgress.style.width = '100%';
+});
+
+// 4. Go back to step 1
+backButton.addEventListener('click', function () {
+
+  stepTwo.hidden = true;
+  stepOne.hidden = false;
+
+  stepLabel.textContent = 'Step 1 of 2 · Your details';
+  stepProgress.style.width = '50%';
+});
+
+// 5. Submit callback request to Google Sheets
+callbackForm.addEventListener('submit', async function (event) {
+
+  event.preventDefault();
+
+  const submitButton = callbackForm.querySelector(
+    'button[type="submit"]'
+  );
+
+  const originalButtonHTML = submitButton.innerHTML;
+
+  // Collect all form information
+  const lead = {
+    fullName: nameInput.value.trim(),
+    phone: phoneInput.value.trim(),
+    gstStatus: callbackForm.querySelector(
+      'input[name="gst"]:checked'
+    )?.value || '',
+
+    monthlyRevenue: callbackForm.querySelector(
+      'input[name="revenue"]:checked'
+    )?.value || '',
+
+    callbackTime: callbackForm.querySelector(
+      'input[name="time"]:checked'
+    )?.value || ''
+  };
+
+  // Debug: inspect submitted information
+  console.log('Ecomsync callback lead:', lead);
+
+  if (!lead.fullName) {
+    alert('Name is missing. Please enter your name.');
+    stepTwo.hidden = true;
+    stepOne.hidden = false;
+    nameInput.focus();
+    return;
+  }
+
+  if (!lead.callbackTime) {
+    alert('Please select your preferred callback time.');
+    return;
+  }
+
+  submitButton.disabled = true;
+  submitButton.textContent = 'Submitting...';
+
+  try {
+
+    await fetch(GOOGLE_SHEETS_WEB_APP_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: {
+        'Content-Type': 'text/plain;charset=utf-8'
+      },
+      body: JSON.stringify(lead)
+    });
+
+    alert('Thank you! Your callback request has been submitted.');
+
+    // Reset form after submission
+    callbackForm.reset();
+
+    stepTwo.hidden = true;
+    stepOne.hidden = false;
+
+    stepLabel.textContent = 'Step 1 of 2 · Your details';
+    stepProgress.style.width = '50%';
+
+  } catch (error) {
+
+    console.error('Google Sheets error:', error);
+
+    alert('Unable to submit your request. Please try again.');
+
+  } finally {
+
+    submitButton.disabled = false;
+    submitButton.innerHTML = originalButtonHTML;
+
+  }
+
+});
+
+</script>
 </body>
 </html>
